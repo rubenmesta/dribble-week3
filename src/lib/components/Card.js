@@ -20,11 +20,11 @@ const Card = ({ image, title, body, buttonText }) => {
 };
 
 const StyledCard = styled.div({
-  border: `1px solid ${colors.grey.base}`,
+  border: `1px solid ${colors.teritary.base}`,
   borderRadius: '8px',
   color: colors.black.base,
-
   width: '350px',
+  background: colors.white.base,
 });
 
 const StyledImage = styled.img({
@@ -34,7 +34,7 @@ const StyledImage = styled.img({
 });
 
 const Container = styled.div({
-  padding: '1rem',
+  padding: '1rem 1rem 2rem',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
