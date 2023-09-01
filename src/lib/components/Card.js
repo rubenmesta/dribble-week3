@@ -30,10 +30,14 @@ const StyledCard = styled.div({
 const StyledImage = styled.img({
   width: '100%',
   height: 'auto',
+  borderRadius: '8px 8px 0 0',
 });
 
 const Container = styled.div({
   padding: '1rem',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
 });
 
 const Title = styled.h4({
