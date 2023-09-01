@@ -24,10 +24,11 @@ const Card = _ref => {
   })));
 };
 const StyledCard = _styled.default.div({
-  border: "1px solid ".concat(_colors.colors.grey.base),
+  border: "1px solid ".concat(_colors.colors.teritary.base),
   borderRadius: '8px',
   color: _colors.colors.black.base,
-  width: '350px'
+  width: '350px',
+  background: _colors.colors.white.base
 });
 const StyledImage = _styled.default.img({
   width: '100%',
@@ -35,7 +36,7 @@ const StyledImage = _styled.default.img({
   borderRadius: '8px 8px 0 0'
 });
 const Container = _styled.default.div({
-  padding: '1rem',
+  padding: '1rem 1rem 2rem',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center'

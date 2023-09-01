@@ -34,7 +34,7 @@ const colors = {
     hover: '#76746B'
   },
   white: {
-    base: '#F5F5F5'
+    base: '#FFF'
   }
 };
 exports.colors = colors;
