@@ -14,13 +14,14 @@ const Card = _ref => {
     image,
     title,
     body,
+    variant,
     buttonText
   } = _ref;
   return /*#__PURE__*/_react.default.createElement(StyledCard, null, /*#__PURE__*/_react.default.createElement("div", null, ' ', /*#__PURE__*/_react.default.createElement(StyledImage, {
     src: image
   })), /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(Title, null, title), /*#__PURE__*/_react.default.createElement(Body, null, body, " "), /*#__PURE__*/_react.default.createElement(_Button.default, {
     label: buttonText,
-    variant: 'primary'
+    variant: variant
   })));
 };
 const StyledCard = _styled.default.div({
@@ -43,7 +44,8 @@ const Container = _styled.default.div({
 });
 const Title = _styled.default.h4({
   fontFamily: 'Prata',
-  color: _colors.colors.secondary.base,
+  fontSize: '1.5rem',
+  color: _colors.colors.secondary.dark,
   margin: 0
 });
 const Body = _styled.default.p({

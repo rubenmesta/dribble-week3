@@ -13,7 +13,7 @@ const Card = ({ image, title, body, variant, buttonText }) => {
       <Container>
         <Title>{title}</Title>
         <Body>{body} </Body>
-        <Button label={buttonText} variant={variant} />
+        {variant && <Button label={buttonText} variant={variant} />}
       </Container>
     </StyledCard>
   );

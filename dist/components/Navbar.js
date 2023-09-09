@@ -7,16 +7,14 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 var _styled = _interopRequireDefault(require("@emotion/styled"));
 var _colors = require("../utils/colors");
-var _Button = _interopRequireDefault(require("./Button"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const Navbar = _ref => {
   let {
-    image,
-    title,
-    body,
-    buttonText
+    items
   } = _ref;
-  return /*#__PURE__*/_react.default.createElement(Nabar, null, /*#__PURE__*/_react.default.createElement(NavContainer, null, /*#__PURE__*/_react.default.createElement(Logo, null, "Logo"), /*#__PURE__*/_react.default.createElement(NavbarItems, null, /*#__PURE__*/_react.default.createElement(Item, null, "Item"), /*#__PURE__*/_react.default.createElement(Item, null, "Item"), /*#__PURE__*/_react.default.createElement(Item, null, "Item"), /*#__PURE__*/_react.default.createElement(Item, null, "Item"))));
+  return /*#__PURE__*/_react.default.createElement(Nabar, null, /*#__PURE__*/_react.default.createElement(NavContainer, null, /*#__PURE__*/_react.default.createElement(Logo, null, "Logo"), /*#__PURE__*/_react.default.createElement(NavbarItems, null, items.map(item => {
+    return /*#__PURE__*/_react.default.createElement(Item, null, item);
+  }))));
 };
 const Nabar = _styled.default.nav({
   background: _colors.colors.primary.dark,

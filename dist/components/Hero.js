@@ -37,7 +37,10 @@ const Hero = _ref => {
   };
   return /*#__PURE__*/_react.default.createElement(Container, null, /*#__PURE__*/_react.default.createElement(Wrapper, null, /*#__PURE__*/_react.default.createElement(Logo, {
     src: logo
-  }), /*#__PURE__*/_react.default.createElement(Title, null, title), /*#__PURE__*/_react.default.createElement(Subtitle, null, subhtitle, " "), primaryCta && /*#__PURE__*/_react.default.createElement(_Button.default, null)));
+  }), /*#__PURE__*/_react.default.createElement(Title, null, title), /*#__PURE__*/_react.default.createElement(Subtitle, null, subhtitle, " "), primaryCta && /*#__PURE__*/_react.default.createElement(_Button.default, {
+    variant: "primary",
+    label: "test"
+  })));
 };
 const Wrapper = _styled.default.div({
   width: '100%',
