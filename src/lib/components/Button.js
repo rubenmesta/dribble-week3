@@ -59,7 +59,6 @@ const StyledButton = styled.button(
     border: 0,
     padding: '1rem',
     cursor: 'pointer',
-    transition: 'background-color .3s, color .3s, border .3s, box-shadow .3s',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

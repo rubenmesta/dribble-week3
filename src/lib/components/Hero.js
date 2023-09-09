@@ -6,7 +6,6 @@ import Button from './Button';
 const Hero = ({
   image,
   logo,
-
   backgroundColor,
   title,
   subhtitle,
@@ -37,7 +36,7 @@ const Hero = ({
         <Logo src={logo} />
         <Title>{title}</Title>
         <Subtitle>{subhtitle} </Subtitle>
-        {primaryCta && <Button />}
+        {primaryCta && <Button variant="primary" label="test" />}
       </Wrapper>
     </Container>
   );

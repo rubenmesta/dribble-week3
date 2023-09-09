@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { colors } from '../utils/colors';
 import Button from './Button';
 
-const Card = ({ image, title, body, buttonText }) => {
+const Card = ({ image, title, body, variant, buttonText }) => {
   return (
     <StyledCard>
       <div>
@@ -13,7 +13,7 @@ const Card = ({ image, title, body, buttonText }) => {
       <Container>
         <Title>{title}</Title>
         <Body>{body} </Body>
-        <Button label={buttonText} variant={'primary'} />
+        <Button label={buttonText} variant={variant} />
       </Container>
     </StyledCard>
   );
@@ -42,7 +42,8 @@ const Container = styled.div({
 
 const Title = styled.h4({
   fontFamily: 'Prata',
-  color: colors.secondary.base,
+  fontSize: '1.5rem',
+  color: colors.secondary.dark,
   margin: 0,
 });
 

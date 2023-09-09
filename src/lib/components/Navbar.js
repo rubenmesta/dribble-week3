@@ -1,18 +1,16 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { colors } from '../utils/colors';
-import Button from './Button';
 
-const Navbar = ({ image, title, body, buttonText }) => {
+const Navbar = ({ items }) => {
   return (
     <Nabar>
       <NavContainer>
         <Logo>Logo</Logo>
         <NavbarItems>
-          <Item>Item</Item>
-          <Item>Item</Item>
-          <Item>Item</Item>
-          <Item>Item</Item>
+          {items.map((item) => {
+            return <Item>{item}</Item>;
+          })}
         </NavbarItems>
       </NavContainer>
     </Nabar>

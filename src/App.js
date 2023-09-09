@@ -7,10 +7,17 @@ import Hero from './lib/components/Hero';
 import styled from '@emotion/styled';
 import SectionWithImage from './lib/components/SectionWithImage';
 
+const navItems = ['Home', 'Reservations', 'Gift Cards', 'Private Dining'];
+
+console.log(navItems);
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar
+        items={navItems.map((i) => {
+          return <a>{i}</a>;
+        })}
+      />
       <Hero
         image={'/img/hero.jpg'}
         title={'Steakhouse'}
@@ -48,6 +55,7 @@ function App() {
           title={'Wednesday'}
           body="This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
           buttonText="Learn More"
+          variant={'secondary'}
         />
         <Card
           image="/img/food7.jpg"
